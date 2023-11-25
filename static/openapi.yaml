@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: QR Code API
+  version: 1.0.0
+paths:
+  /generate_qr:
+    post:
+      summary: Generate a QR code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: string
+                  description: The data to encode into the QR code.
+      responses:
+        200:
+          description: QR code generated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  image_link:
+                    type: string
