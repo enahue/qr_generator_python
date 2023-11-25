@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')
-API_URL = 'http://127.0.0.1:5000/static/openapi.yaml'  # Our API url (can be an URL)
+API_URL = request.host_url + 'static/openapi.yaml'  # Our API url (can be an URL)
 
 # Call factory function to create our blueprint
 swaggerui_blueprint = get_swaggerui_blueprint(
