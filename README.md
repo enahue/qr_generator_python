@@ -11,6 +11,9 @@ Este es un proyecto increíble que hace cosas asombrosas.
 1. Modifica `API_URL='Url de mi api/static/openapi.yaml'`
 2. Ejecuta `python app.py` para iniciar la aplicación.
 
+## Documentación 
+1. Puedes revisar la documentacion en  `url de mi api/api/docs/#/default/post_generate_qr`
+
 ## Contribución
 
 ¡Agradecemos las contribuciones a este proyecto! Si deseas contribuir, sigue estos pasos:
